@@ -1,0 +1,68 @@
+/* Login.css */
+
+/* Style for the login container */
+div {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style for the header */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for the input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for the "Login" button */
+button:nth-of-type(1) {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Style for the "Sign up" link */
+p a {
+  text-decoration: none;
+  color: #0074d9;
+}
+
+/* Style for the error message */
+p {
+  color: red;
+}
+
+/* Style for the navigation buttons */
+button:nth-of-type(2),
+button:nth-of-type(3) {
+  padding: 10px 20px;
+  background-color: #009966;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Style for the navigation buttons on hover */
+button:nth-of-type(2):hover,
+button:nth-of-type(3):hover {
+  background-color: #007f5a;
+}

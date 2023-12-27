@@ -1,0 +1,30 @@
+/* ResearcherDashboard.css */
+
+/* Style for the dashboard container */
+div {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style for the header */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the button */
+  button {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style for the button on hover */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
