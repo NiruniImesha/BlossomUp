@@ -8,6 +8,7 @@ import AdminHome from './Pages/Image_Identification/home/AdminHome';
 function App() {
   return (
     <Routes>
+      
       <Route path="/" element={<Loging />} />
       <Route path="/Loging" element={<Loging />} />
       <Route path="/Admin-Dashboard" element={<AdminHome />} />
