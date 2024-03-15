@@ -17,6 +17,7 @@ app.use("/api/DiseaseIdentification", require("./routes/Disease-Identification-m
 app.use("/api/OrchidLeaves", require("./routes/OrchidLeaves-manage"))
 app.use("/api/OrchidDisease", require("./routes/OrchidDisease-manage"))
 app.use("/api/PlantDisease", require("./routes/PlantDisease-manage"))
+app.use("/api/User", require("./routes/User-manage"))
 // app.use("/api/auth" , require("./routes/auth"))
 
 

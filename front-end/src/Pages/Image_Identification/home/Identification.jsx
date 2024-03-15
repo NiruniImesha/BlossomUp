@@ -13,7 +13,7 @@ const Identification = () => {
     <div className="home">
       <Sidebar />
       <div className="homeContainer">
-        <Navbar />
+        {/* <Navbar /> */}
         
         <Table />
       </div>

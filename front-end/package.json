@@ -18,7 +18,7 @@
     "react-data-table-component": "^7.4.7",
     "react-data-table-component-with-filter": "^7.4.5",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "^5.0.0",
     "react-use-dark-mode": "^2.0.3",
     "sass": "^1.50.0",
@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
     "web-vitals": "^2.1.4"
   }
 }

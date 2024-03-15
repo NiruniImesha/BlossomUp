@@ -6,23 +6,28 @@ const PlantDiseaseSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    Checked_date:{
-        type:Date,
+    Checked_start_date:{
+        type:String,
         require:true,
     },
-    Disease_affected_area:{
+    Checked_Current_date:{
         type:String,
-        required:true
+        require:true,
     },
-    Last_disease_affected_percentage:{
+
+    // first_Day_Disease_affected_area:{
+    //     type:String,
+    //     required:true
+    // },
+    // Current_Day_Disease_affected_area:{
+    //     type:String,
+    //     required:true
+    // },
+    first_disease_affected_percentage:{
         type:String,
         required:true
     },
     Current_disease_affected_percentage:{
-        type:String,
-        required:true
-    },
-    Disease_affected_area:{
         type:String,
         required:true
     },

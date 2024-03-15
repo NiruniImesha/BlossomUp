@@ -1,20 +1,20 @@
-//import logo from './logo.svg';
-//import './App.css';
-import { BrowserRouter, Route, Routes, Link, Router } from "react-router-dom";
-import Identification from "./Pages/Image_Identification/home/Identification"
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Loging from './Pages/Image_Identification/home/Loging';
+import Identification from './Pages/Image_Identification/home/Identification';
+import Monitoring from './Pages/Image_Identification/home/Monitoring';
+import AdminHome from './Pages/Image_Identification/home/AdminHome';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Identification />} />
-        {/* <Route path="/Identification-Result" element={<Identification />}></Route> */}
-        
-      </Routes>
-
-    </BrowserRouter>
-  )
-
+    <Routes>
+      <Route path="/" element={<Loging />} />
+      <Route path="/Loging" element={<Loging />} />
+      <Route path="/Admin-Dashboard" element={<AdminHome />} />
+      <Route path="/Identification-Result" element={<Identification />} />
+      <Route path="/Plant-Monitoring-Result" element={<Monitoring />} />
+    </Routes>
+  );
 }
 
 export default App;
