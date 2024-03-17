@@ -32,7 +32,7 @@ function SubmitImages() {
     }
     if (!plantName) {
       errors.plantName = 'Please enter the plant name.';
-    } else if (plantName.length > 15) {
+    } else if (plantName.length > 30) {
       errors.plantName = 'Plant name must be less than 15 characters.';
     }
     if (!description) {
