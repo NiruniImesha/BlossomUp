@@ -32,6 +32,8 @@ function SubmitImages() {
     }
     if (!plantName) {
       errors.plantName = 'Please enter the plant name.';
+    } else if (plantName.length > 15) {
+      errors.plantName = 'Plant name must be less than 15 characters.';
     }
     if (!description) {
       errors.description = 'Please enter a description.';
@@ -59,12 +61,10 @@ function SubmitImages() {
         uploadDateTime: serverTimestamp(),
       });
 
-      Swal.fire('Success', 'Image uploaded successfully.', 'success');
-      setImage(null);
-      setImageUrl('');
-      setPlantName('');
-      setDescription('');
-      setError('');
+      await Swal.fire('Success', 'Image uploaded successfully.', 'success');
+
+      // Reload the page
+      window.location.reload();
     } catch (error) {
       console.error('Error uploading image:', error);
       Swal.fire('Error', 'Error uploading image. Please try again.', 'error');
@@ -80,7 +80,7 @@ function SubmitImages() {
         <h1>Image Upload</h1>
         <div className="form-group">
           <input type="file" accept="image/*" onChange={handleImageChange} className={`form-control ${fieldErrors.image && 'is-invalid'}`} />
-          {imageUrl && <img src={imageUrl} alt="Selected" style={{ width: '100%', marginTop: '10px' }} />}
+          {imageUrl && <img src={imageUrl} alt="Selected" className="preview-image" />}
           {fieldErrors.image && <div className="invalid-feedback">{fieldErrors.image}</div>}
         </div>
         <div className="form-group">

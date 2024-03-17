@@ -89,7 +89,7 @@ function SubmitedImageView() {
       try {
         await deleteDoc(doc(db, 'Images', id));
         Swal.fire('Deleted!', 'The image has been rejected and deleted from the database.', 'success');
-        history('/submited-list');
+        history('/Manage-New-Diseases');
       } catch (error) {
         console.error('Error deleting image:', error);
         Swal.fire('Error', 'An error occurred while deleting the image.', 'error');
@@ -221,7 +221,7 @@ function SubmitedImageView() {
           </select>
         </div>
       </div>
-      <div className="text-center mt-3">
+      <div className="text-center mt-3 mb-3">
         <Button variant="success" onClick={handleApprove}>Approve</Button>{' '}
         <Button variant="danger" onClick={handleReject}>Reject</Button>
       </div>
