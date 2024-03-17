@@ -21,10 +21,6 @@ img = cv2.imread(image_path)
 # Convert the image to the Used
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
-# Enhance contrast
-clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-hsv[:, :, 2] = clahe.apply(hsv[:, :, 2])
-
 # Remove shadows
 kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
 tophat = cv2.morphologyEx(hsv[:, :, 2], cv2.MORPH_TOPHAT, kernel)
