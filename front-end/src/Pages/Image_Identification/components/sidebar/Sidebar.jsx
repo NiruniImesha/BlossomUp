@@ -43,6 +43,15 @@ const Sidebar = () => {
                         </li>
                     </Link>
 
+                    <Link to={"/Manage-New-Diseases "} style={{ textDecoration: "none" }}>
+                        <li>
+                            <DashboardIcon className='icon' />
+
+                            <span>Manage New Diseases</span>
+
+                        </li>
+                    </Link>
+
                 </ul>
             </div>
             <div className="bottom">

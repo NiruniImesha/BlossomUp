@@ -1,0 +1,42 @@
+.header{
+    margin: 30px;
+}
+
+
+.image {
+    max-width: 100px; /* Adjust the max-width according to your design */
+    max-height: 100px; /* Adjust the max-height according to your design */
+    width: 100px; /* Set the width to a fixed value */
+    height: 85px; /* Set the height to a fixed value */
+}
+
+
+    .pagination {
+        display: flex;
+        justify-content: center; /* Center the pagination horizontally */
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px; /* Add margin bottom to create space between pagination and sidebar */
+    }
+
+    .pagination li {
+        margin-right: 5px;
+    }
+
+    .pagination li.active div {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .pagination li div {
+        border: 1px solid #dee2e6;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    /* Adjust the main content area to create space for the sidebar */
+    .main-content {
+        margin-left: 260px; /* Width of sidebar (240px) + additional space */
+    }
+  
