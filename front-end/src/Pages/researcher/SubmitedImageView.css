@@ -1,0 +1,26 @@
+/* ImageView.css */
+
+.image-view-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-preview {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+

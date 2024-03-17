@@ -1,0 +1,45 @@
+GET http://localhost:3001/api/engineer-manage/get-engineers
+
+###
+
+GET http://localhost:3001/api/project-manage/get-projects
+
+###
+
+GET http://localhost:3001/api/appointment-manage/get-Appointment
+
+###
+
+POST http://localhost:3001/api/client-manage/add-client
+
+Content-type: application/json
+Accept: application/json
+
+{
+    "first_name": "Akila",
+    "last_name":"Tharuka",
+    "address":"asdasdasda",
+    "contact_no":"0767676953",
+    "email":"sdasdassaa",
+    "nic_no":"849165123",
+    "proj_id":"625e1ef490f584163fb5d438",
+}   
+
+###
+
+POST http://localhost:3001/api/engineer-manage/add-engineer HTTP/1.1
+
+
+content-type: application/x-www-form-urlencoded
+Accept: application/json
+
+{
+    "emp_id": "asjdasdh2323847234",
+    "status":"ONGOING",
+    "description":"THis is new project",
+    "project_id":"62578612fc86c5d586232d29"
+}   
+
+###
+
+GET http://localhost:3001/api/employee-manage/get-employees
