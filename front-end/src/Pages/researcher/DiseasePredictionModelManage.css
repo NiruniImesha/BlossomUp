@@ -1,0 +1,26 @@
+/* ButtonStyles.css */
+.custom-button {
+    background-color: #9000ff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding */
+    font-size: 18px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    margin-bottom: 30px; /* Margin bottom */
+    margin-top: 15%; /* Margin top */
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.custom-button:disabled {
+    background-color: #6c757d; /* Gray background when disabled */
+    cursor: not-allowed; /* Disabled cursor */
+}
+
+.progress-line {
+   padding: 2% 5% 4% 5%;
+
+}
