@@ -21,11 +21,6 @@ img = cv2.imread(image_path)
 # Convert the image to the Used
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
-# Remove shadows
-kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
-tophat = cv2.morphologyEx(hsv[:, :, 2], cv2.MORPH_TOPHAT, kernel)
-hsv[:, :, 2] = cv2.add(hsv[:, :, 2], tophat)
-
 # Define a range for green color in HSV
 lower_green = np.array([40, 40, 40])
 upper_green = np.array([100, 255, 255])
