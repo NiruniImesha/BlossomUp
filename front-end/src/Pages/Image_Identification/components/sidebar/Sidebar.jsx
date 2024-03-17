@@ -43,11 +43,20 @@ const Sidebar = () => {
                         </li>
                     </Link>
 
-                    <Link to={"/Manage-New-Diseases "} style={{ textDecoration: "none" }}>
+                    <Link to={"/Manage-New-Diseases"} style={{ textDecoration: "none" }}>
                         <li>
                             <DashboardIcon className='icon' />
 
                             <span>Manage New Diseases</span>
+
+                        </li>
+                    </Link>
+
+                    <Link to={"/Upload-New-Disease-Images"} style={{ textDecoration: "none" }}>
+                        <li>
+                            <DashboardIcon className='icon' />
+
+                            <span>Upload New Disease Images</span>
 
                         </li>
                     </Link>

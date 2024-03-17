@@ -118,7 +118,7 @@ function SubmitedImageView() {
       if (response.data.includes('successfully')) {
         Swal.fire('Success', 'Image approved and uploaded to the folder successfully!', 'success'); // SweetAlert for success
         await deleteDoc(doc(db, 'Images', id));
-        history('/submited-list');
+        history('/Manage-New-Diseases');
       } else {
         Swal.fire('Error', 'Error uploading image to the folder. Please try again.', 'error'); // SweetAlert for error
       }

@@ -10,9 +10,13 @@ function CreateFolderPopup({ showModal, closeModal, handleCreateFolder, newFolde
     setLoading(false); // Set loading to false after creating folder
   };
 
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   return (
     <>
-      <Modal show={showModal} onHide={closeModal}>
+      <Modal show={showModal} onHide={() => {closeModal(); refreshPage();}}>
         <Modal.Header closeButton>
           <Modal.Title>Create New Folder</Modal.Title>
         </Modal.Header>
@@ -34,7 +38,7 @@ function CreateFolderPopup({ showModal, closeModal, handleCreateFolder, newFolde
           </Form.Group>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={closeModal} disabled={loading}>
+          <Button variant="secondary" onClick={() => {closeModal(); refreshPage();}} disabled={loading}>
             Cancel
           </Button>
           <Button variant="primary" onClick={handleCreateFolderWithLoading} disabled={loading}>

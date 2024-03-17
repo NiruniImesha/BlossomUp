@@ -1,0 +1,23 @@
+/* ImageUpload.css */
+.image-upload-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .input-error {
+    border: 1px solid red;
+  }
+  
