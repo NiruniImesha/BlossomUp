@@ -1,6 +1,6 @@
 import Sidebar from "../../Image_Identification/components/sidebar/Sidebar.jsx";
 import "./home.scss";
-import Table from "../../Image_Identification/components/table/ManageNewDiseasesTable.jsx";
+import Table from "../../Image_Identification/components/table/UploadNewDiseasesTable.jsx";
 import UploadImageform from "../../farmer/SubmitImages.jsx";
 
 const UploadNewDiseaseImages = () => {

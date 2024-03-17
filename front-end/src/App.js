@@ -7,6 +7,7 @@ import AdminHome from './Pages/Image_Identification/home/AdminHome';
 import ManageNewDiseases from './Pages/Image_Identification/home/ManageNewDiseases';
 import ManageNewDiseasesView from './Pages/Image_Identification/home/ManageNewDiseasesView';
 import UploadNewDiseaseImages from './Pages/Image_Identification/home/UploadNewDiseaseImages';
+import DiseasePredictionModelManage from './Pages/researcher/DiseasePredictionModelManage';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Route path="/Manage-New-Diseases" element={<ManageNewDiseases />} />
       <Route path="/Manage-New-Diseases-view/:id" element={<ManageNewDiseasesView />} />
       <Route path="/Upload-New-Disease-Images" element={<UploadNewDiseaseImages />} />
-      
+      <Route path="/Disease-Prediction-Model-Manage" element={<DiseasePredictionModelManage />} />
+
     </Routes>
   );
 }
