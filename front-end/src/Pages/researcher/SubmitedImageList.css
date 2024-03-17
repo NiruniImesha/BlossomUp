@@ -37,6 +37,6 @@
 
     /* Adjust the main content area to create space for the sidebar */
     .main-content {
-        margin-left: 5px; /* Width of sidebar (240px) + additional space */
+        padding: 2%;
     }
   
