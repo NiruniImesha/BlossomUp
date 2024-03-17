@@ -90,6 +90,7 @@ const DiseasePredictionModelManage = () => {
                 <div className="homeContainer">
                     <Table />
                     <div className="text-center">
+
                         <button
                             className="custom-button large-text" // Apply custom class
                             onClick={handleModelReTrain}
