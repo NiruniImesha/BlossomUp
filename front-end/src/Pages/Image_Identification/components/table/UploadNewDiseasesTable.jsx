@@ -51,7 +51,7 @@ const List = () => {
 
   const headerStyle = {
     fontWeight: 'bold',
-    color: 'blue',
+    color: 'white',
     textAlign: 'left'
   };
 
